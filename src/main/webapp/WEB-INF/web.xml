@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+		<param-name>v1</param-name>
+		<param-value>1000</param-value>
+	</context-param>
+  <servlet>
+  	<servlet-name>Fservlett</servlet-name>
+  	<display-name>Fservlett</display-name>
+  	<description></description>
+  	<servlet-class>com.monami.servlet.Fservlett</servlet-class>
+  	<init-param>
+			<param-name>a</param-name>
+			<param-value>1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>b</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>c</param-name>
+			<param-value>3</param-value>
+		</init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>Sservlet</servlet-name>
+  	<display-name>Sservlet</display-name>
+  	<description></description>
+  	<servlet-class>com.monami.servlet.Sservlet</servlet-class>
+  	<init-param>
+			<param-name>d</param-name>
+			<param-value>4</param-value>
+		</init-param>
+		<init-param>
+			<param-name>e</param-name>
+			<param-value>5</param-value>
+		</init-param>
+		<init-param>
+			<param-name>f</param-name>
+			<param-value>6</param-value>
+		</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Fservlett</servlet-name>
+  	<url-pattern>/fservlett</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Sservlet</servlet-name>
+  	<url-pattern>/sservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
